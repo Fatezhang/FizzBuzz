@@ -1,7 +1,9 @@
 package com.tw;
 
+import java.util.List;
+
 public class FizzBuzz {
-    public static int count(int number) {
-        return 1;
+    public static List<Integer> count(List<Integer> numbers) {
+        return numbers;
     }
 }
