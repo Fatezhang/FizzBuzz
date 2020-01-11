@@ -22,4 +22,11 @@ public class FizzBuzzTest {
         assertThat(FizzBuzz.of(9)).isEqualTo("Fizz");
         assertThat(FizzBuzz.of(33)).isEqualTo("Fizz");
     }
+
+    @Test
+    void shouldReturnFizzWhenGivenMultipleOf5() {
+        assertThat(FizzBuzz.of(5)).isEqualTo("Buzz");
+        assertThat(FizzBuzz.of(10)).isEqualTo("Buzz");
+        assertThat(FizzBuzz.of(25)).isEqualTo("Buzz");
+    }
 }
