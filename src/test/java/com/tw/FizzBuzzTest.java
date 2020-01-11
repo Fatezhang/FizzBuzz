@@ -29,4 +29,31 @@ public class FizzBuzzTest {
         assertThat(FizzBuzz.of(10)).isEqualTo("Buzz");
         assertThat(FizzBuzz.of(25)).isEqualTo("Buzz");
     }
+
+    @Test
+    void shouldReturnFizzWhenGivenMultipleOf7() {
+        assertThat(FizzBuzz.of(7)).isEqualTo("Whizz");
+        assertThat(FizzBuzz.of(14)).isEqualTo("Whizz");
+        assertThat(FizzBuzz.of(28)).isEqualTo("Whizz");
+    }
+
+    @Test
+    void shouldReturnFizzBuzzWhenGivenMultipleOf3And5(){
+        assertThat(FizzBuzz.of(15)).isEqualTo("FizzBuzz");
+    }
+
+    @Test
+    void shouldReturnFizzBuzzWhenGivenMultipleOf3And7(){
+        assertThat(FizzBuzz.of(21)).isEqualTo("FizzWhizz");
+    }
+
+    @Test
+    void shouldReturnFizzBuzzWhenGivenMultipleOf5And7(){
+        assertThat(FizzBuzz.of(35)).isEqualTo("BuzzWhizz");
+    }
+
+    @Test
+    void shouldReturnFizzBuzzWhenGivenMultipleOf3And5And7(){
+        assertThat(FizzBuzz.of(210)).isEqualTo("FizzBuzzWhizz");
+    }
 }
