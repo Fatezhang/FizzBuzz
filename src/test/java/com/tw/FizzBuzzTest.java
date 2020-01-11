@@ -19,5 +19,7 @@ public class FizzBuzzTest {
     @Test
     void shouldReturnFizzWhenGivenMultipleOf3() {
         assertThat(FizzBuzz.of(3)).isEqualTo("Fizz");
+        assertThat(FizzBuzz.of(9)).isEqualTo("Fizz");
+        assertThat(FizzBuzz.of(33)).isEqualTo("Fizz");
     }
 }
